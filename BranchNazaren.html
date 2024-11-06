@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Pages</title>
+        <style>
+            #loginBase{
+                display: grid;
+                grid-template-columns: 0.5fr 3fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                gap: 20px;
+                padding: 10px;
+                column-gap: 10px;
+                grid-template-areas: 
+                "header header"
+                "label input"
+                "label input"
+                "button button";
+
+                background-color: lightblue;
+            }
+            h2{
+                grid-area: header;
+                display: flex;
+                justify-content: center;
+                height: 20px;
+            }
+            input{
+                width: 280px;
+                height: 30px;
+            }
+            button{
+                grid-area: button;
+                width: 366px;
+                height: 59.833px;
+            }
+            label{
+                background-color: #eaeaea;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                height: 35px;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 500px;
+            }
+            a{
+                text-decoration: none;
+                color: #555;
+                grid-area: button;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loginBase">
+            <h2>IDE Shortcut</h2>
+            <label for="username">Username: </label>
+            <input name="username" type="text"/>
+            <label for="password">Password: </label>
+            <input name="password" type="text"/>
+            <a target="_blank" href="https://www.ide.unpar.ac.id"><button>Login</button></a>
+        </div>
+    </body>
+</html>
